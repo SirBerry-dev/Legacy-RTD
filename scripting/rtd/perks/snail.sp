@@ -19,8 +19,8 @@
 DEFINE_CALL_APPLY_REMOVE(Snail)
 
 public void Snail_ApplyPerk(const int client, const Perk perk)
-{
-	SetSpeedEx(client, perk.GetPrefFloat("multiplier", 0.4));
+{       // Set speed to 77% of normal — roughly Heavy's speed
+	SetSpeedEx(client, perk.GetPrefFloat("multiplier", 0.77));
 }
 
 public void Snail_RemovePerk(const int client, const RTDRemoveReason eRemoveReason)
